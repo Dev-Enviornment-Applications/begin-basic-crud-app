@@ -3,6 +3,30 @@
         "app": "crud-app",
         "http": [
           {
+            "/users/:userid": {
+              "method": "get",
+              "src": "/users/read"
+            }
+          },
+          {
+            "/users/:userid": {
+              "method": "post",
+              "src": "/users/create"
+            }
+          },
+          {
+            "/users/:userid": {
+              "method": "post",
+              "src": "/users/update"
+            }
+          },
+          {
+            "/users/:userid": {
+              "method": "post",
+              "src": "/users/create"
+            }
+          },
+          {
             "/todos": {
               "method": "post",
               "src": "/todos/create"
